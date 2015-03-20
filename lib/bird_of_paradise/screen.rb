@@ -62,8 +62,8 @@ module BirdOfParadise
     def layout
       timeline_width, mentions_width, lines = calculate_column_sizes
       [
-        { x:       0,              columns: timeline_width, feed: timeline },
-        { x:       timeline_width, columns: mentions_width, feed: mentions }
+        { x: 0,              columns: timeline_width, feed: timeline },
+        { x: timeline_width, columns: mentions_width, feed: mentions }
       ].each do |details|
         window = Rurses::Window.new(
           lines:   lines,

@@ -32,7 +32,7 @@ module BirdOfParadise
     end
 
     def read
-      @thread = Thread.new(streaming_client, q) do |stream, queue|
+      @thread = Thread.new(streaming_client) do |stream|
         stream.user do |message|
           case message
           when Twitter::Streaming::FriendList

@@ -86,7 +86,7 @@ module BirdOfParadise
           end
       end
 
-      mark_changed
+      @changed = false
     end
   end
 end
