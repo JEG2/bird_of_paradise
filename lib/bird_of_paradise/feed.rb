@@ -61,10 +61,14 @@ module BirdOfParadise
 
     def move_up
       tweets.move_up
+
+      mark_changed
     end
 
     def move_down
       tweets.move_down
+
+      mark_changed
     end
 
     def redraw
